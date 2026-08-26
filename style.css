@@ -107,8 +107,8 @@ nav a:hover {
 }
 .card {
   background: white;
-  border: 1px solid #e8dfc9;
-  border-radius: 10px;
+  border: 2px solid #b28a20;
+  border-radius: 50px;
   padding: 25px;
   box-shadow: 0 5px 20px #0000000a;
 }
