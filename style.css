@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fffdf8;
+  color: #444;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+header {
+  background: #fff;
+  border-bottom: 2px solid #d4af37;
+  padding: 18px 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b28a20;
+}
+.logo span {
+  background: #d4af37;
+  color: white;
+  border-radius: 50%;
+  padding: 8px 10px;
+  margin-right: 8px;
+}
+nav a {
+  margin-left: 20px;
+  color: #444;
+  font-weight: bold;
+  font-size: 14px;
+}
+nav a:hover {
+  color: #b28a20;
+}
+.hero {
+  padding: 90px 0;
+  background: linear-gradient(120deg, #fff, #f8efd9);
+}
+.hero h1 {
+  font-size: 52px;
+  color: #222;
+  max-width: 700px;
+  line-height: 1.15;
+}
+.hero h1 span {
+  color: #b28a20;
+}
+.hero p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.gold {
+  background: #d4af37;
+  color: white;
+}
+.outline {
+  border: 1px solid #d4af37;
+  color: #a27b19;
+}
+.section {
+  padding: 70px 0;
+}
+.cream {
+  background: #faf5e8;
+}
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.title h2 {
+  font-size: 36px;
+  color: #222;
+}
+.title p {
+  max-width: 650px;
+  margin: 10px auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: white;
+  border: 1px solid #e8dfc9;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 20px #0000000a;
+}
+.card h3 {
+  color: #222;
+  margin: 10px 0;
+}
+.icon {
+  font-size: 32px;
+}
+.tag {
+  display: inline-block;
+  background: #f3e6bd;
+  color: #8d6a15;
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.route {
+  display: grid;
+  grid-template-columns: 70px 1fr 130px;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.number {
+  font-size: 25px;
+  color: #d4af37;
+  font-weight: bold;
+}
+.mapfake {
+  height: 330px;
+  background: #e9e4d8;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.mapfake:before,
+.mapfake:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 120%;
+  height: 5px;
+  transform: rotate(25deg);
+}
+.mapfake:after {
+  transform: rotate(-30deg);
+  height: 4px;
+}
+.pin {
+  position: relative;
+  z-index: 2;
+  background: #d4af37;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.about h2 {
+  font-size: 36px;
+  color: #222;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+th,
+td {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid #e8dfc9;
+}
+th {
+  background: #f3e6bd;
+  color: #6f5410;
+}
+.form {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #e8dfc9;
+  border-radius: 10px;
+}
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 11px;
+  margin-top: 6px;
+  border: 1px solid #d8ccb0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.form textarea {
+  height: 130px;
+}
+footer {
+  background: #171717;
+  color: #ccc;
+  padding: 35px 0;
+  margin-top: 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer .logo {
+  color: #d4af37;
+}
+@media (max-width: 800px) {
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .route {
+    grid-template-columns: 50px 1fr;
+  }
+  .route .btn {
+    grid-column: 2;
+  }
+}
+@media (max-width: 560px) {
+  nav {
+    display: none;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 60px 0;
+  }
+  .hero h1 {
+    font-size: 35px;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .title h2 {
+    font-size: 29px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
