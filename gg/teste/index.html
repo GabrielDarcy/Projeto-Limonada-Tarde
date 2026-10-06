@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Doações | Thermal Express</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container nav">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            <span>TE</span> Thermal Express
+        </a>
+
+        <nav>
+
+            <a href="index.html">Início</a>
+            <a href="doacoes.html">Doações</a>
+            <a href="ongs.html">ONGs</a>
+            <a href="rotas.html">Rotas</a>
+            <a href="colaboradores.html">Colaboradores</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="title">
+
+            <h1>
+                Doe e faça a diferença
+            </h1>
+
+            <p>
+                A Thermal Express conecta pessoas que desejam ajudar
+                com organizações que precisam de apoio.
+
+                Escolha uma doação, preencha seus dados e contribua
+                para transformar vidas.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="section donation-area"
+    id="cadastro-doacao"
+>
+
+    <div class="container">
+
+        <div class="title">
+
+            <h2>
+                Antes de fazer sua doação
+            </h2>
+
+            <p>
+                Confira as informações abaixo e escolha o tipo de doação
+                que deseja realizar.
+            </p>
+
+        </div>
+
+
+        <div class="donation-layout">
+
+
+            <!-- =================================================
+                 ESCOLHA DA DOAÇÃO
+                 ================================================= -->
+
+            <div class="donation-choice">
+
+                <div class="choice-heading">
+
+                    <h2>
+                        Escolha o tipo de doação
+                    </h2>
+
+                    <p>
+                        Selecione uma categoria para continuar.
+                    </p>
+
+                </div>
+
+
+                <div class="donation-options">
+
+
+                    <!-- ALIMENTAÇÃO -->
+
+                    <div class="donation-item">
+
+                        <button
+                            class="donation-button"
+                            onclick="abrirDoacao('alimentacao')"
+                            type="button"
+                        >
+
+                            🍚 Alimentação
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div
+                            id="alimentacao"
+                            class="donation-content"
+                        >
+
+                            <p>
+                                Doações de alimentos ajudam organizações
+                                na preparação de refeições e montagem
+                                de cestas básicas.
+                            </p>
+
+                            <h4>
+                                Exemplos:
+                            </h4>
+
+                            <ul>
+
+                                <li>Arroz</li>
+                                <li>Feijão</li>
+                                <li>Massas</li>
+                                <li>Leite</li>
+                                <li>Óleo</li>
+                                <li>Alimentos não perecíveis</li>
+
+                            </ul>
+
+                            <button
+                                class="select-button"
+                                onclick="selecionarDoacao('Alimentação')"
+                                type="button"
+                            >
+                                Selecionar esta doação
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROUPAS -->
+
+                    <div class="donation-item">
+
+                        <button
+                            class="donation-button"
+                            onclick="abrirDoacao('roupas')"
+                            type="button"
+                        >
+
+                            👕 Roupas
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div
+                            id="roupas"
+                            class="donation-content"
+                        >
+
+                            <p>
+                                Roupas e calçados em boas condições
+                                podem ajudar pessoas em situação
+                                de vulnerabilidade.
+                            </p>
+
+                            <h4>
+                                Exemplos:
+                            </h4>
+
+                            <ul>
+
+                                <li>Camisetas</li>
+                                <li>Calças</li>
+                                <li>Casacos</li>
+                                <li>Calçados</li>
+                                <li>Cobertores</li>
+
+                            </ul>
+
+                            <button
+                                class="select-button"
+                                onclick="selecionarDoacao('Roupas')"
+                                type="button"
+                            >
+                                Selecionar esta doação
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MATERIAL ESCOLAR -->
+
+                    <div class="donation-item">
+
+                        <button
+                            class="donation-button"
+                            onclick="abrirDoacao('escolar')"
+                            type="button"
+                        >
+
+                            📚 Material escolar
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div
+                            id="escolar"
+                            class="donation-content"
+                        >
+
+                            <p>
+                                Materiais escolares podem contribuir
+                                para o aprendizado de crianças e jovens.
+                            </p>
+
+                            <h4>
+                                Exemplos:
+                            </h4>
+
+                            <ul>
+
+                                <li>Cadernos</li>
+                                <li>Livros</li>
+                                <li>Lápis</li>
+                                <li>Canetas</li>
+                                <li>Mochilas</li>
+
+                            </ul>
+
+                            <button
+                                class="select-button"
+                                onclick="selecionarDoacao('Material escolar')"
+                                type="button"
+                            >
+                                Selecionar esta doação
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HIGIENE -->
+
+                    <div class="donation-item">
+
+                        <button
+                            class="donation-button"
+                            onclick="abrirDoacao('higiene')"
+                            type="button"
+                        >
+
+                            🧼 Produtos de higiene
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div
+                            id="higiene"
+                            class="donation-content"
+                        >
+
+                            <p>
+                                Produtos de higiene auxiliam no cuidado
+                                e bem-estar das pessoas atendidas.
+                            </p>
+
+                            <h4>
+                                Exemplos:
+                            </h4>
+
+                            <ul>
+
+                                <li>Sabonete</li>
+                                <li>Shampoo</li>
+                                <li>Pasta de dente</li>
+                                <li>Escova de dente</li>
+
+                            </ul>
+
+                            <button
+                                class="select-button"
+                                onclick="selecionarDoacao('Produtos de higiene')"
+                                type="button"
+                            >
+                                Selecionar esta doação
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ANIMAIS -->
+
+                    <div class="donation-item">
+
+                        <button
+                            class="donation-button"
+                            onclick="abrirDoacao('animais')"
+                            type="button"
+                        >
+
+                            🐾 Produtos para animais
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div
+                            id="animais"
+                            class="donation-content"
+                        >
+
+                            <p>
+                                Doações para animais ajudam organizações
+                                que trabalham com resgate, proteção e
+                                cuidados de cães e gatos.
+                            </p>
+
+                            <h4>
+                                Exemplos:
+                            </h4>
+
+                            <ul>
+
+                                <li>Ração</li>
+                                <li>Petiscos</li>
+                                <li>Cobertores</li>
+                                <li>Potes</li>
+                                <li>Brinquedos</li>
+                                <li>Materiais de limpeza</li>
+
+                            </ul>
+
+                            <button
+                                class="select-button"
+                                onclick="selecionarDoacao('Produtos para animais')"
+                                type="button"
+                            >
+                                Selecionar esta doação
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DOAÇÃO FINANCEIRA -->
+
+                    <div class="donation-item">
+
+                        <button
+                            class="donation-button"
+                            onclick="abrirDoacao('financeiro')"
+                            type="button"
+                        >
+
+                            💰 Doação financeira
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div
+                            id="financeiro"
+                            class="donation-content"
+                        >
+
+                            <p>
+                                A contribuição financeira pode ajudar
+                                uma organização a comprar materiais
+                                e manter seus projetos.
+                            </p>
+
+                            <h4>
+                                Possíveis utilizações:
+                            </h4>
+
+                            <ul>
+
+                                <li>Compra de alimentos</li>
+                                <li>Materiais de higiene</li>
+                                <li>Materiais escolares</li>
+                                <li>Cuidados com animais</li>
+                                <li>Manutenção dos projetos</li>
+
+                            </ul>
+
+                            <button
+                                class="select-button"
+                                onclick="selecionarDoacao('Doação financeira')"
+                                type="button"
+                            >
+                                Selecionar esta doação
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 FORMULÁRIO
+                 ================================================= -->
+
+            <div class="donation-form-area">
+
+
+                <div
+                    class="donation-placeholder"
+                    id="formPlaceholder"
+                >
+
+                    <div class="placeholder-icon">
+                        🤝
+                    </div>
+
+                    <h3>
+                        Escolha um tipo de doação
+                    </h3>
+
+                    <p>
+                        Selecione uma das opções ao lado para preencher
+                        seus dados e registrar sua contribuição.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="donationForm"
+                    class="donation-form"
+                    style="display: none;"
+                >
+
+
+                    <div class="form-section">
+
+                        <h3>
+                            Dados do doador
+                        </h3>
+
+                        <p class="form-description">
+                            Informe seus dados para que possamos registrar sua contribuição.
+                        </p>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group">
+
+                                <label for="nome">
+                                    Nome completo
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="Digite seu nome completo"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    E-mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Digite seu e-mail"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="telefone">
+                                    Telefone
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="telefone"
+                                    name="telefone"
+                                    placeholder="(00) 00000-0000"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="endereco">
+                                    Endereço
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="endereco"
+                                    name="endereco"
+                                    placeholder="Rua, número, bairro e cidade"
+                                    required
+                                >
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-section">
+
+                        <h3>
+                            Informações da doação
+                        </h3>
+
+                        <p class="form-description">
+                            Informe o que deseja doar e acrescente os detalhes necessários.
+                        </p>
+
+
+                        <div class="form-group">
+
+                            <label for="tipoDoacao">
+                                Tipo de doação
+                            </label>
+
+                            <select
+                                id="tipoDoacao"
+                                name="tipoDoacao"
+                                required
+                                onchange="atualizarCamposDoacao()"
+                            >
+
+                                <option value="">
+                                    Selecione uma opção
+                                </option>
+
+                                <option value="Alimentação">
+                                    🍚 Alimentação
+                                </option>
+
+                                <option value="Roupas">
+                                    👕 Roupas
+                                </option>
+
+                                <option value="Material escolar">
+                                    📚 Material escolar
+                                </option>
+
+                                <option value="Produtos de higiene">
+                                    🧼 Produtos de higiene
+                                </option>
+
+                                <option value="Produtos para animais">
+                                    🐾 Produtos para animais
+                                </option>
+
+                                <option value="Doação financeira">
+                                    💰 Doação financeira
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div
+                            class="form-group"
+                            id="campoDescricao"
+                        >
+
+                            <label for="descricao">
+                                Descrição da doação
+                            </label>
+
+                            <textarea
+                                id="descricao"
+                                name="descricao"
+                                rows="6"
+                                placeholder="Descreva com detalhes o que você está doando..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div
+                            class="form-group"
+                            id="campoObservacoes"
+                        >
+
+                            <label for="observacoes">
+                                Observações
+                            </label>
+
+                            <textarea
+                                id="observacoes"
+                                name="observacoes"
+                                rows="3"
+                                placeholder="Adicione alguma informação importante..."
+                            ></textarea>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-section">
+
+                        <h3>
+                            Localização da doação
+                        </h3>
+
+                        <p class="form-description">
+                            Informe onde a doação será entregue.
+                        </p>
+
+
+                        <div class="form-group">
+
+                            <label for="localEntrega">
+                                Local de entrega
+                            </label>
+
+                            <select
+                                id="localEntrega"
+                                name="localEntrega"
+                                required
+                            >
+
+                                <option value="">
+                                    Escolha o local de entrega
+                                </option>
+
+                                <option value="Sede da organização">
+                                    Sede da organização
+                                </option>
+
+                                <option value="Ponto de coleta">
+                                    Ponto de coleta
+                                </option>
+
+                                <option value="Outro local combinado">
+                                    Outro local combinado
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button
+                            type="submit"
+                            class="button"
+                        >
+                            Confirmar doação
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="button secondary"
+                        >
+                            Limpar formulário
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+
+                <!-- =================================================
+                     PIX
+                     ================================================= -->
+
+                <div
+                    class="pix-box"
+                    id="pixBox"
+                    style="display: none;"
+                >
+
+                    <div class="pix-icon">
+                        💰
+                    </div>
+
+                    <h3>
+                        Doação financeira
+                    </h3>
+
+                    <p>
+                        Para realizar uma doação financeira, envie o valor
+                        diretamente pelo PIX da Thermal Express.
+                    </p>
+
+                    <div class="pix-key">
+
+                        <span>
+                            Chave PIX
+                        </span>
+
+                        <strong id="pixKey">
+                            602.237.680-73
+                        </strong>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="button"
+                        onclick="copiarPix()"
+                    >
+                        Copiar chave PIX
+                    </button>
+
+
+                    <div class="pix-info">
+
+                        <h4>
+                            Como o valor será utilizado?
+                        </h4>
+
+                        <p>
+                            O valor recebido poderá ser destinado às necessidades
+                            das ações da Thermal Express, como compra de alimentos,
+                            materiais de higiene, materiais escolares, cuidados
+                            com animais e manutenção dos projetos.
+                        </p>
+
+
+                        <h4>
+                            Quer ajudar uma ONG ou instituição específica?
+                        </h4>
+
+                        <p>
+                            Nesse caso, informe o nome da ONG ou instituição
+                            desejada na mensagem do próprio PIX. Assim,
+                            a contribuição poderá ser identificada corretamente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RESUMO DA DOAÇÃO
+     ========================================================= -->
+
+<section
+    class="section cream"
+    id="resumoDoacao"
+    style="display: none;"
+>
+
+    <div class="container">
+
+        <div class="title">
+
+            <h2>
+                Resumo da sua doação
+            </h2>
+
+            <p>
+                Confira as informações antes de finalizar o cadastro.
+            </p>
+
+        </div>
+
+
+        <div class="donation-summary">
+
+
+            <div class="summary-item">
+
+                <strong>
+                    Nome:
+                </strong>
+
+                <span id="resumoNome">
+                    -
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>
+                    E-mail:
+                </strong>
+
+                <span id="resumoEmail">
+                    -
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>
+                    Telefone:
+                </strong>
+
+                <span id="resumoTelefone">
+                    -
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>
+                    Endereço:
+                </strong>
+
+                <span id="resumoEndereco">
+                    -
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>
+                    Tipo de doação:
+                </strong>
+
+                <span id="resumoTipo">
+                    -
+                </span>
+
+            </div>
+
+
+            <div
+                class="summary-item"
+                id="resumoDescricaoContainer"
+            >
+
+                <strong>
+                    Descrição:
+                </strong>
+
+                <span id="resumoDescricao">
+                    -
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>
+                    Local de entrega:
+                </strong>
+
+                <span id="resumoEntrega">
+                    -
+                </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <strong>
+                    Observações:
+                </strong>
+
+                <span id="resumoObservacoes">
+                    Nenhuma observação
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="action-area">
+
+            <button
+                class="button"
+                onclick="finalizarDoacao()"
+                type="button"
+            >
+                Confirmar e registrar
+            </button>
+
+            <button
+                class="button secondary"
+                onclick="voltarFormulario()"
+                type="button"
+            >
+                Voltar e editar
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONFIRMAÇÃO
+     ========================================================= -->
+
+<section
+    class="section"
+    id="confirmacaoDoacao"
+    style="display: none;"
+>
+
+    <div class="container">
+
+        <div class="title">
+
+            <span class="tag">
+                Doação registrada
+            </span>
+
+            <h2>
+                Doação cadastrada com sucesso!
+            </h2>
+
+            <p>
+                Obrigado por fazer parte da Thermal Express.
+                Sua contribuição foi registrada e poderá
+                ajudar quem precisa.
+            </p>
+
+        </div>
+
+
+        <div class="donation-success">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h3>
+                Obrigado por contribuir!
+            </h3>
+
+            <p>
+                Guarde as informações da sua doação e,
+                se necessário, entre em contato para
+                combinar os detalhes da entrega ou retirada.
+            </p>
+
+            <p>
+
+                <strong>
+                    Protocolo:
+                </strong>
+
+                <span id="protocoloDoacao">
+                    -
+                </span>
+
+            </p>
+
+        </div>
+
+
+        <div class="action-area">
+
+            <button
+                class="button"
+                onclick="novaDoacao()"
+                type="button"
+            >
+                Fazer outra doação
+            </button>
+
+            <a
+                href="ongs.html"
+                class="button secondary"
+            >
+                Conhecer ONGs
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer">
+
+        <div>
+
+            <div class="logo">
+                Thermal Express
+            </div>
+
+            <p>
+                Solidariedade que aproxima pessoas.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Thermal Express
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
