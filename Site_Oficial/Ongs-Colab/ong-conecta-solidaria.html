@@ -4,20 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conecta Solidária | Thermal Express</title>
-    <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="ong-conecta-solidaria.css" />
+      <link rel="stylesheet" href="../navegacao.css" />
+    <script src="../navegacao.js" defer></script>
   </head>
-  <body>
-    <header>
-      <div class="container nav">
-        <a href="index.html" class="logo"><span>TE</span>Thermal Express</a>
-        <nav>
-          <a href="index.html">Início</a>
-          <a href="doacoes.html">Doações</a>
-          <a href="ongs.html">ONGs</a>
-          <a href="rotas.html">Rotas</a>
-          <a href="colaboradores.html">Colaboradores</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="contato.html">Contato</a>
+  <body class="page-ong-conecta-solidaria">
+        <!-- MENU PADRÃO: atualize os estilos em navegacao.css (raiz do projeto). -->
+    <header class="site-header">
+      <div class="container nav site-nav-inner">
+        <a class="logo site-brand" href="../index.html"><span>TE</span>Thermal Express</a>
+        <button class="site-nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="site-navigation" aria-expanded="false">
+          <span class="site-toggle-icon" aria-hidden="true"></span>
+          <span>Menu</span>
+        </button>
+        <nav class="site-navigation" id="site-navigation" aria-label="Navegação principal">
+          <a href="../index.html">Início</a>
+          <a href="../Doações/doacoes.html">Doações</a>
+          <a href="../Ongs-Colab/ongs.html" aria-current="page">ONGs</a>
+          <a href="../Rotas/index.html">Rotas</a>
+          <a href="../Ongs-Colab/colaboradores.html">Colaboradores</a>
+          <a href="../Sobre/index.html">Sobre</a>
+          <a href="../Contatos/contato.html">Contato</a>
+          <a href="../login.html" class="site-login">Login</a>
+          <a href="../Admin/admin/admin.html" class="site-admin">Admin</a>
         </nav>
       </div>
     </header>
@@ -70,7 +80,7 @@
             Entre em contato com a ONG para confirmar a necessidade e combinar a
             entrega.
           </p>
-          <a class="btn gold" href="contato.html">Entrar em contato</a>
+          <a class="btn gold" href="../Contatos/contato.html">Entrar em contato</a>
         </div>
       </section>
     </main>

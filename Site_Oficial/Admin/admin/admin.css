@@ -763,3 +763,22 @@ button {
     display: none;
   }
 }
+
+
+/* ====================================================================
+   REFINAMENTO VISUAL | ADMIN — somente admin.html
+   ==================================================================== */
+body { font-family: 'Segoe UI', Inter, Arial, sans-serif; background: #f8f7f3; color: #494740; }
+.sidebar { background: #fffdfa; border-right: 1px solid #e8e3d7; box-shadow: 2px 0 15px #42301008; }
+.brand-icon,.profile-avatar { background: linear-gradient(135deg,#d5aa4b,#a9771c); }
+.brand strong { color: #8d6519; letter-spacing: -.04em; }
+.menu { border-radius: 11px; }
+.menu.active { background: #f4e9cf; color: #856219; }
+.content { padding: clamp(18px,3vw,40px); }
+.topbar h1 { letter-spacing: -.045em; }
+.summary-card,.panel,.main-card { border-radius: 19px; border: 1px solid #ebe5da; box-shadow: 0 8px 27px #4b38200b; background: #fff; }
+.summary-card { transition: transform .2s,box-shadow .2s; }
+.summary-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px #4b38201a; }
+button,a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #c59a43; outline-offset: 3px; }
+@media (max-width: 750px) { .sidebar { box-shadow: none; } .content { padding: 18px; } }

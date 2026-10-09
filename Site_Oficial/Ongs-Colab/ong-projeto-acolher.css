@@ -1,0 +1,12 @@
+/* PÁGINA DA ONG — apenas esta organização, sem mudar outras páginas */
+.page-ong-projeto-acolher .section.cream:first-child { background: linear-gradient(115deg,#fffcf6,#f6ecd4); }
+.page-ong-projeto-acolher .about > .card { border-top: 4px solid #c79a40; }
+.page-ong-projeto-acolher .about > div:first-child > p { line-height: 1.8; }
+.page-ong-projeto-acolher .about .tag { margin-bottom: 10px; }
+.page-ong-projeto-acolher .about .tag a:hover { text-decoration: underline; }
+.page-ong-projeto-acolher .cards { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.page-ong-projeto-acolher .cards .card { padding: 25px; }
+.page-ong-projeto-acolher .cards .card h3 { margin: 0 0 12px; color: var(--ouro-escuro); }
+.page-ong-projeto-acolher .section.cream:last-of-type { text-align: center; }
+.page-ong-projeto-acolher .section.cream:last-of-type .btn { margin-top: 12px; }
+@media(max-width:680px){ .page-ong-projeto-acolher .cards { grid-template-columns: 1fr; } }

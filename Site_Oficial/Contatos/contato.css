@@ -1,0 +1,17 @@
+/* CONTATO — estilos exclusivos de contato.html */
+.page-contato .form { max-width: 740px; margin: 0 auto; padding: clamp(24px,5vw,42px); border: 1px solid var(--borda); border-radius: 23px; background: white; box-shadow: var(--sombra); }
+.page-contato .form label { display: block; margin-bottom: 20px; font-weight: 700; font-size: 13px; color: #4b4339; }
+.page-contato .form input:not([type=hidden]), .page-contato .form select, .page-contato .form textarea { display: block; width: 100%; min-height: 47px; padding: 12px 14px; margin-top: 8px; border: 1px solid #ddd4c2; border-radius: 11px; outline: 0; background: #fff; color: var(--titulo); transition: border-color .2s,box-shadow .2s; }
+.page-contato .form textarea { min-height: 155px; resize: vertical; }
+.page-contato .form :is(input, select, textarea):focus { border-color: var(--ouro); box-shadow: 0 0 0 4px #d4af3722; }
+.page-contato .form button { margin-top: 4px; }
+.page-contato .contact-success { max-width: 740px; margin: 25px auto 0; padding: 26px; background: #fff9eb; border: 1px solid #d8bd7b; border-radius: 16px; text-align: center; }
+.page-contato .contact-success h2 { margin-bottom: 10px; }
+.page-contato .faq { max-width: 740px; margin: 72px auto 0; }
+.page-contato .faq h2 { text-align: center; margin-bottom: 28px; font-size: clamp(1.7rem,3vw,2rem); }
+.page-contato .faq details { padding: 0 23px; margin-bottom: 12px; border: 1px solid var(--borda); border-radius: 14px; background: #fff; transition: border-color .2s,box-shadow .2s; }
+.page-contato .faq details[open] { border-color: #d7bc7b; box-shadow: var(--sombra); }
+.page-contato .faq summary { cursor: pointer; padding: 20px 3px; color: #3d372f; font-weight: 700; }
+.page-contato .faq details p { border-top: 1px solid #f1eadd; padding: 16px 0; margin: 0; color: #656158; font-size: 14px; }
+.page-contato .footer-contact h2 { color: #edc77a; font-size: 15px; margin-bottom: 7px; }
+.page-contato .footer-contact p { overflow-wrap: anywhere; }

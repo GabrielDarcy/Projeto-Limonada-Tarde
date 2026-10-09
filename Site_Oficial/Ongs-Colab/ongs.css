@@ -1,0 +1,9 @@
+/* ONGS — listagem exclusiva da página ongs.html */
+.page-ongs .cards { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.page-ongs .card { display: flex; flex-direction: column; }
+.page-ongs .card h3 { margin: 18px 0 8px; }
+.page-ongs .card h3 a { transition: color .2s; }
+.page-ongs .card h3 a:hover { color: var(--ouro-escuro); text-decoration: underline; text-underline-offset: 4px; }
+.page-ongs .card p { margin-top: auto; }
+@media(max-width: 900px) { .page-ongs .cards { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width: 600px) { .page-ongs .cards { grid-template-columns: 1fr; } }

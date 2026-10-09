@@ -1,0 +1,213 @@
+/* ================================================================
+   THERMAL EXPRESS — NAVEGAÇÃO COMPARTILHADA (navegacao.css)
+   Cabeçalho padrão das páginas PÚBLICAS da plataforma.
+   Carregue DEPOIS do CSS próprio de cada página para impedir conflitos.
+   O painel Admin mantém sua própria barra lateral.
+   ================================================================ */
+
+/* 01. Layout, fundo e identidade do cabeçalho */
+.site-header {
+  position: relative;
+  z-index: 20;
+  padding: 0;
+  background: rgba(255, 255, 255, .98);
+  border: 0;
+  border-bottom: 1px solid #e9e2d4;
+  box-shadow: 0 3px 20px rgba(67, 47, 15, .05);
+}
+.site-header .site-nav-inner.container {
+  box-sizing: border-box;
+  width: min(1160px, calc(100% - 48px));
+  max-width: 1160px;
+  min-height: 84px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.site-header .site-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #825b16;
+  font: 800 21px/1.2 'Segoe UI', Arial, sans-serif;
+  letter-spacing: -.045em;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.site-header .site-brand span {
+  box-sizing: border-box;
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border-radius: 13px;
+  background: linear-gradient(140deg, #dcba66, #a8781d);
+  color: #fff;
+  font: 800 14px/1 Arial, sans-serif;
+  box-shadow: 0 5px 15px rgba(162, 114, 33, .16);
+  letter-spacing: 0;
+}
+
+/* 02. Links — mesma ordem, espaçamento e aparência em todas as páginas */
+.site-header .site-navigation {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  min-width: 0;
+  gap: 3px;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+.site-header .site-navigation a {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 39px;
+  margin: 0;
+  padding: 9px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #575248;
+  background: transparent;
+  font: 650 13px/1.2 'Segoe UI', Arial, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: none;
+  transform: none;
+  transition: color .2s, background-color .2s, border-color .2s, box-shadow .2s;
+}
+.site-header .site-navigation a:hover,
+.site-header .site-navigation a[aria-current="page"] {
+  color: #825b16;
+  background: #faf1de;
+}
+.site-header .site-navigation a[aria-current="page"] {
+  font-weight: 800;
+}
+.site-header .site-navigation a.site-login {
+  margin-left: 5px;
+  padding: 10px 17px;
+  border-color: #b68b3c;
+  color: #fff;
+  background: linear-gradient(125deg, #d0a64d, #a9791e);
+  font-weight: 800;
+  box-shadow: 0 6px 15px rgba(168, 117, 26, .16);
+}
+.site-header .site-navigation a.site-login:hover {
+  background: linear-gradient(125deg, #bc9037, #8b6017);
+  color: #fff;
+}
+.site-header .site-navigation a.site-admin {
+  border-color: #e9dfcb;
+  color: #755b2c;
+}
+.site-header .site-navigation a.site-admin:hover {
+  border-color: #d4b876;
+}
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline: 3px solid #d3a044;
+  outline-offset: 3px;
+}
+
+/* 03. Botão mobile — por padrão o menu funciona até sem JavaScript */
+.site-header .site-nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 8px 12px;
+  border: 1px solid #dcc89e;
+  border-radius: 11px;
+  color: #785417;
+  background: #fffaf0;
+  font: 750 14px/1 'Segoe UI', Arial, sans-serif;
+  cursor: pointer;
+}
+.site-header .site-toggle-icon,
+.site-header .site-toggle-icon::before,
+.site-header .site-toggle-icon::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform .2s, opacity .2s;
+}
+.site-header .site-toggle-icon { position: relative; }
+.site-header .site-toggle-icon::before,
+.site-header .site-toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.site-header .site-toggle-icon::before { transform: translateY(-6px); }
+.site-header .site-toggle-icon::after { transform: translateY(6px); }
+.site-header .site-nav-toggle[aria-expanded="true"] .site-toggle-icon { background: transparent; }
+.site-header .site-nav-toggle[aria-expanded="true"] .site-toggle-icon::before { transform: rotate(45deg); }
+.site-header .site-nav-toggle[aria-expanded="true"] .site-toggle-icon::after { transform: rotate(-45deg); }
+
+/* 04. Em telas menores, o menu se torna vertical e expansível */
+@media (max-width: 980px) {
+  .site-header .site-nav-inner.container {
+    width: min(100% - 32px, 1160px);
+    min-height: 73px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    padding: 12px 0;
+  }
+  .site-header .site-brand { font-size: 19px; }
+  .site-header .site-brand span { width: 38px; height: 38px; }
+  .site-header .site-navigation {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    max-height: min(65vh, 520px);
+    overflow: auto;
+    flex: 1 0 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 3px;
+    margin: 12px 0 0;
+    padding: 12px 0 4px;
+    border-top: 1px solid #f0e8d7;
+  }
+  .site-header .site-navigation a,
+  .site-header .site-navigation a.site-login,
+  .site-header .site-navigation a.site-admin {
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 41px;
+    margin: 0;
+    padding: 11px 13px;
+  }
+  /* O JavaScript esconde/abre o menu somente quando carregou. */
+  .js-menu .site-header .site-nav-toggle { display: inline-flex; margin-left: auto; }
+  .js-menu .site-header .site-navigation { display: none; }
+  .js-menu .site-header .site-navigation.is-open { display: flex; }
+}
+@media (max-width: 380px) {
+  .site-header .site-brand { font-size: 17px; gap: 7px; }
+  .site-header .site-nav-toggle { padding: 8px 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header *, .site-header *::before, .site-header *::after { transition: none !important; }
+}

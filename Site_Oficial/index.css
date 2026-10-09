@@ -1,0 +1,8 @@
+/* INÍCIO — estilos exclusivos de index.html */
+.page-inicio .hero .container > p:first-child { display: inline-flex; align-items: center; padding: 8px 13px; border: 1px solid #e8cf91; border-radius: 100px; background: #fff8e7; font-size: 11px !important; letter-spacing: .11em; }
+.page-inicio .hero .container > p:nth-of-type(2) { margin-bottom: 22px; }
+.page-inicio .caTEs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.page-inicio .caTEs .card { min-height: 230px; }
+.page-inicio .cream .card { border-top: 3px solid #d4aa53; }
+.page-inicio .cream .card h3 { margin-top: 4px; }
+@media(max-width: 720px) { .page-inicio .caTEs { grid-template-columns: 1fr; } .page-inicio .caTEs .card { min-height: auto; } }
