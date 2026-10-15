@@ -1,4 +1,335 @@
 /* COLABORADORES — colaboradores.html */
-.page-colaboradores .cards { align-items: stretch; }
-.page-colaboradores .card { height: 100%; }
-.page-colaboradores .card h3 { margin-top: 16px; }
+.page-colaboradores .cards {
+  align-items: stretch;
+}
+.page-colaboradores .card {
+  height: 100%;
+}
+.page-colaboradores .card h3 {
+  margin-top: 16px;
+}
+
+body.page-colaboradores {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fffdf8;
+}
+
+.page-colaboradores .colaboradores-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-colaboradores .colaboradores-section {
+    flex: 1;
+    width: 100%;
+    padding: 58px 0 68px;
+}
+
+
+
+.page-colaboradores .colaboradores-title {
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.page-colaboradores .section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #a27b19;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.page-colaboradores .colaboradores-title h1 {
+    margin: 0;
+    color: #222;
+    font-size: 38px;
+    font-weight: 750;
+    line-height: 1.2;
+}
+
+.page-colaboradores .colaboradores-title p {
+    max-width: 620px;
+    margin: 14px auto 0;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.page-colaboradores .ranking {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #eee5d2;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px #392a080a;
+}
+
+
+.page-colaboradores .ranking-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.page-colaboradores .ranking-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.page-colaboradores .ranking-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #faf3df;
+    border: 1px solid #eee0b9;
+    border-radius: 14px;
+    font-size: 26px;
+}
+
+.page-colaboradores .ranking-heading h2 {
+    margin: 0;
+    color: #292929;
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.page-colaboradores .ranking-heading p {
+    margin: 5px 0 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.page-colaboradores .ranking-count {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    color: #806117;
+    background: #faf3df;
+    border: 1px solid #eee0b9;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.page-colaboradores .ranking-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #eee7d8;
+    border-radius: 10px;
+}
+
+
+.page-colaboradores .ranking table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    font-size: 14px;
+}
+
+.page-colaboradores .ranking thead th {
+    padding: 17px 20px;
+    color: #6f5410;
+    background: #f3e6bd;
+    border-bottom: 1px solid #e5d49b;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.page-colaboradores .ranking tbody td {
+    padding: 19px 20px;
+    color: #555;
+    background: #fff;
+    border-bottom: 1px solid #f0eadc;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.page-colaboradores .ranking tbody tr:nth-child(even) td {
+    background: #fffdf8;
+}
+
+.page-colaboradores .ranking tbody tr:hover td {
+    background: #faf5e8;
+}
+
+.page-colaboradores .ranking tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.page-colaboradores .position-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    padding: 6px 9px;
+    color: #6d6250;
+    background: #f5f2eb;
+    border: 1px solid #eae4d7;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.page-colaboradores .gold-badge {
+    color: #795b0b;
+    background: #fff1bf;
+    border-color: #ecd78e;
+}
+
+.page-colaboradores .silver-badge {
+    color: #5f6268;
+    background: #edf0f3;
+    border-color: #dce0e5;
+}
+
+.page-colaboradores .bronze-badge {
+    color: #89552e;
+    background: #fbe8d9;
+    border-color: #efd0b7;
+}
+
+
+.page-colaboradores .collaborator-name {
+    color: #303030;
+    font-weight: 700;
+}
+
+
+.page-colaboradores .ranking .amount {
+    color: #8d6a15;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+/* Cidades */
+
+.page-colaboradores .ranking .city {
+    color: #777;
+    white-space: nowrap;
+}
+
+
+.page-colaboradores .ranking tbody tr.primeiro td {
+    background: #fffaf0;
+}
+
+.page-colaboradores .ranking tbody tr.segundo td {
+    background: #fcfcfc;
+}
+
+.page-colaboradores .ranking tbody tr.terceiro td {
+    background: #fffaf6;
+}
+
+.page-colaboradores .ranking tbody tr.primeiro:hover td {
+    background: #fff3d3;
+}
+
+.page-colaboradores .ranking tbody tr.segundo:hover td {
+    background: #f3f3f3;
+}
+
+.page-colaboradores .ranking tbody tr.terceiro:hover td {
+    background: #fff0e3;
+}
+
+.page-colaboradores .ranking-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    padding: 15px 17px;
+    background: #fffdf8;
+    border: 1px solid #f0eadc;
+    border-radius: 9px;
+}
+
+.page-colaboradores .ranking-footer-icon {
+    color: #b28a20;
+    font-size: 18px;
+}
+
+.page-colaboradores .ranking-footer p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.page-colaboradores .colaboradores-footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 27px 0;
+    background: #171717;
+    color: #ccc;
+}
+
+.page-colaboradores .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-colaboradores .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.page-colaboradores .footer-logo {
+    color: #d4af37;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.page-colaboradores .footer-logo span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    color: #171717;
+    background: #d4af37;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.page-colaboradores .footer-brand p {
+    margin: 0;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.page-colaboradores .footer-copyright {
+    margin: 0;
+    color: #999;
+    font-size: 13px;
+}

@@ -1,107 +1,217 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Colaboradores | Thermal Express</title>
-        <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="colaboradores.css" />
-      <link rel="stylesheet" href="../navegacao.css" />
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../navegacao.css">
+    <link rel="stylesheet" href="colaboradores.css">
+
     <script src="../navegacao.js" defer></script>
-  </head>
-  <body class="page-colaboradores">
-        <!-- MENU PADRÃO: atualize os estilos em navegacao.css (raiz do projeto). -->
+</head>
+
+<body class="page-colaboradores">
+
+
     <header class="site-header">
-      <div class="container nav site-nav-inner">
-        <a class="logo site-brand" href="../index.html"><span>TE</span>Thermal Express</a>
-        <button class="site-nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="site-navigation" aria-expanded="false">
-          <span class="site-toggle-icon" aria-hidden="true"></span>
-          <span>Menu</span>
-        </button>
-        <nav class="site-navigation" id="site-navigation" aria-label="Navegação principal">
-          <a href="../index.html">Início</a>
-          <a href="../Doações/doacoes.html">Doações</a>
-          <a href="../Ongs-Colab/ongs.html">ONGs</a>
-          <a href="../Rotas/index.html">Rotas</a>
-          <a href="../Ongs-Colab/colaboradores.html" aria-current="page">Colaboradores</a>
-          <a href="../Sobre/index.html">Sobre</a>
-          <a href="../Contatos/contato.html">Contato</a>
-          <a href="../login.html" class="site-login">Login</a>
-          <a href="../Admin/admin/admin.html" class="site-admin">Admin</a>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="section">
-        <div class="container">
-          <div class="title">
-            <h2>Nossos Colaboradores</h2>
-            <p>Conheça alguns dos nossos colaboradores mais frquentes 💪</p>
-          </div>
-          <div class="ranking"> 
-            <h3>🏆 Ranking de Colaboradores</h3>
-             <table> 
-              <thead>
-                 <tr> 
-                  <th>Posição</th>
-                   <th>Colaborador</th> 
-                   <th>Total investido    </th>
-                    <th>Cidade</th>
-                   </tr>
-                   </thead> 
-                   <tbody> 
-                    <tr class="primeiro"> 
-                      <td>🥇 1º</td>
-                       <td>Maria Gabriela</td>
-                        <td>R$ 2.500,00   </td> 
-                        <td>Porto Alegre - RS</td> 
-                      </tr> 
-                      <tr class="segundo"> 
-                        <td>🥈 2º</td>
-                         <td>Júlia Hackbarth</td> 
-                         <td>R$ 1.850,00   </td> 
-                         <td>Canoas - RS</td>
-                         </tr>
-                          <tr class="terceiro">
-                             <td>🥉 3º</td> 
-                             <td>Mavie Gonçalves</td> 
-                             <td>R$ 1.400,00   </td>
-                              <td>Viamão - RS</td>
-                             </tr> 
-                             <tr> <td>  4º</td>
-                               <td>Isaac Hackbarth</td> 
-                               <td>R$ 950,00   </td>
-                                <td>Gravataí - RS</td> 
-                              </tr>
-                               <tr>
-                                 <td>  5º</td> 
-                                 <td>Miranda Santos</td>
-                                  <td>R$ 720,00   </td>
-                                   <td>Cachoeirinha - RS</td>
-                                   </tr>
-                                   </tbody>
-                                   </table>
-                                   </div>
-          
+        <div class="container nav site-nav-inner">
+
+            <a class="logo site-brand" href="../index.html">
+                <span>TE</span>Thermal Express
+            </a>
+
+            <button
+                class="site-nav-toggle"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-controls="site-navigation"
+                aria-expanded="false"
+            >
+                <span class="site-toggle-icon" aria-hidden="true"></span>
+                <span>Menu</span>
+            </button>
+
+            <nav
+                class="site-navigation"
+                id="site-navigation"
+                aria-label="Navegação principal"
+            >
+                <a href="../index.html">Início</a>
+                <a href="../Doações/doacoes.html">Doações</a>
+                <a href="../Ongs-Colab/ongs.html">ONGs</a>
+                <a href="../Rotas/index.html">Rotas</a>
+                <a href="../Ongs-Colab/colaboradores.html" aria-current="page">
+                    Colaboradores
+                </a>
+                <a href="../Sobre/index.html">Sobre</a>
+                <a href="../Contatos/contato.html">Contato</a>
+                <a href="../login.html" class="site-login">Login</a>
+                <a href="../Admin/admin/admin.html" class="site-admin">Admin</a>
+            </nav>
+
         </div>
-      </section>
+    </header>
+
+
+    <main class="colaboradores-main">
+
+        <section class="section colaboradores-section">
+            <div class="container">
+
+
+                <div class="title colaboradores-title">
+                    <span class="section-label">NOSSA COMUNIDADE</span>
+
+                    <h1>Nossos Colaboradores</h1>
+
+                    <p>
+                        Conheça alguns dos nossos colaboradores mais frequentes
+                        e veja quem está fazendo a diferença. 💪
+                    </p>
+                </div>
+
+
+                <section class="ranking" aria-labelledby="ranking-title">
+
+                    <div class="ranking-header">
+                        <div class="ranking-heading">
+                            <span class="ranking-icon" aria-hidden="true">🏆</span>
+
+                            <div>
+                                <h2 id="ranking-title">
+                                    Ranking de Colaboradores
+                                </h2>
+
+                                <p>
+                                    Confira os colaboradores que mais contribuíram.
+                                </p>
+                            </div>
+                        </div>
+
+                        <span class="ranking-count">5 colaboradores</span>
+                    </div>
+
+
+                    <div class="ranking-table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Posição</th>
+                                    <th scope="col">Colaborador</th>
+                                    <th scope="col">Total investido</th>
+                                    <th scope="col">Cidade</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="primeiro">
+                                    <td>
+                                        <span class="position-badge gold-badge">
+                                            🥇 1º
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="collaborator-name">
+                                            Maria Gabriela
+                                        </span>
+                                    </td>
+                                    <td class="amount">R$ 2.500,00</td>
+                                    <td class="city">Porto Alegre - RS</td>
+                                </tr>
+
+                                <tr class="segundo">
+                                    <td>
+                                        <span class="position-badge silver-badge">
+                                            🥈 2º
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="collaborator-name">
+                                            Júlia Hackbarth
+                                        </span>
+                                    </td>
+                                    <td class="amount">R$ 1.850,00</td>
+                                    <td class="city">Canoas - RS</td>
+                                </tr>
+
+                                <tr class="terceiro">
+                                    <td>
+                                        <span class="position-badge bronze-badge">
+                                            🥉 3º
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="collaborator-name">
+                                            Mavie Gonçalves
+                                        </span>
+                                    </td>
+                                    <td class="amount">R$ 1.400,00</td>
+                                    <td class="city">Viamão - RS</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="position-badge">4º</span>
+                                    </td>
+                                    <td>
+                                        <span class="collaborator-name">
+                                            Isaac Hackbarth
+                                        </span>
+                                    </td>
+                                    <td class="amount">R$ 950,00</td>
+                                    <td class="city">Gravataí - RS</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="position-badge">5º</span>
+                                    </td>
+                                    <td>
+                                        <span class="collaborator-name">
+                                            Miranda Santos
+                                        </span>
+                                    </td>
+                                    <td class="amount">R$ 720,00</td>
+                                    <td class="city">Cachoeirinha - RS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ranking-footer">
+                        <span class="ranking-footer-icon" aria-hidden="true">✦</span>
+                        <p>
+                            Cada contribuição ajuda a fortalecer nossa rede
+                            de solidariedade.
+                        </p>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Rodapé -->
+    <footer class="colaboradores-footer">
+        <div class="container-footer">
 
-    <footer>
-      <div class="container-footer">
-          <div class="logo">
-            <p>Thermal Express</p>
-          </div>
-          <div class="text">
-            <p>Solidariedade que aproxima pessoas.</p>
+            <div class="footer-brand">
+                <a class="footer-logo" href="../index.html">
+                    <span>TE</span> Thermal Express
+                </a>
+                <p>Solidariedade que aproxima pessoas.</p>
+            </div>
+
+            <p class="footer-copyright">
+                © 2026 Thermal Express
+            </p>
+
         </div>
-        <p>© 2026 Thermal Express</p>
-      </div>
     </footer>
 
-
-  </body>
+</body>
 </html>
-
-<!---->
