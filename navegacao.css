@@ -5,7 +5,6 @@
    O painel Admin mantém sua própria barra lateral.
    ================================================================ */
 
-/* 01. Layout, fundo e identidade do cabeçalho */
 .site-header {
   position: relative;
   z-index: 20;
@@ -57,7 +56,6 @@
   letter-spacing: 0;
 }
 
-/* 02. Links — mesma ordem, espaçamento e aparência em todas as páginas */
 .site-header .site-navigation {
   display: flex;
   flex: 0 1 auto;
@@ -124,7 +122,6 @@
   outline-offset: 3px;
 }
 
-/* 03. Botão mobile — por padrão o menu funciona até sem JavaScript */
 .site-header .site-nav-toggle {
   display: none;
   align-items: center;
@@ -162,7 +159,6 @@
 .site-header .site-nav-toggle[aria-expanded="true"] .site-toggle-icon::before { transform: rotate(45deg); }
 .site-header .site-nav-toggle[aria-expanded="true"] .site-toggle-icon::after { transform: rotate(-45deg); }
 
-/* 04. Em telas menores, o menu se torna vertical e expansível */
 @media (max-width: 980px) {
   .site-header .site-nav-inner.container {
     width: min(100% - 32px, 1160px);
@@ -199,7 +195,6 @@
     margin: 0;
     padding: 11px 13px;
   }
-  /* O JavaScript esconde/abre o menu somente quando carregou. */
   .js-menu .site-header .site-nav-toggle { display: inline-flex; margin-left: auto; }
   .js-menu .site-header .site-navigation { display: none; }
   .js-menu .site-header .site-navigation.is-open { display: flex; }

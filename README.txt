@@ -15,7 +15,7 @@ Páginas:
 - ong-amigos-animais.html
 - style.css
 
-Não utiliza JavaScript, banco de dados ou frameworks.
+Não utiliza banco de dados ou frameworks.
 Os dados das ONGs e endereços são demonstrativos.
 
 Para abrir:
