@@ -9,7 +9,6 @@ const locais = [
     lng: -51.217051,
     pagina: "local-01.html"
   },
-
   {
     numero: "02",
     nome: "Local de Recebimento 02",
@@ -19,7 +18,6 @@ const locais = [
     lng: -51.222893,
     pagina: "local-02.html"
   },
-
   {
     numero: "03",
     nome: "Local de Recebimento 03",
@@ -29,7 +27,6 @@ const locais = [
     lng: -51.2242465,
     pagina: "local-03.html"
   },
-
   {
     numero: "04",
     nome: "Local de Recebimento 04",
@@ -39,7 +36,6 @@ const locais = [
     lng: -51.2284062,
     pagina: "local-04.html"
   },
-
   {
     numero: "05",
     nome: "Local de Recebimento 05",
@@ -49,7 +45,6 @@ const locais = [
     lng: -51.2064342,
     pagina: "local-05.html"
   },
-
   {
     numero: "06",
     nome: "Local de Recebimento 06",
@@ -59,7 +54,6 @@ const locais = [
     lng: -51.2048559,
     pagina: "local-06.html"
   },
-
   {
     numero: "07",
     nome: "Local de Recebimento 07",
@@ -69,7 +63,6 @@ const locais = [
     lng: -51.2085402,
     pagina: "local-07.html"
   },
-
   {
     numero: "08",
     nome: "Local de Recebimento 08",
@@ -84,17 +77,13 @@ const locais = [
 
 
 
-/* =========================================================
-   INICIALIZAÇÃO DO MAPA
-   ========================================================= */
-
 const mapa = L.map("mapa-rota");
 
 
 
-/* =========================================================
+/*
    CAMADA DO MAPA
-   =========================================================
+   
 
    Antes:
 
@@ -122,10 +111,6 @@ L.tileLayer(
 
 
 
-/* =========================================================
-   ÍCONE DOS MARCADORES
-   ========================================================= */
-
 function criarIcone(numero) {
 
   return L.divIcon({
@@ -151,10 +136,6 @@ function criarIcone(numero) {
 
 
 
-/* =========================================================
-   CRIAÇÃO DOS MARCADORES
-   ========================================================= */
-
 const marcadores = [];
 
 
@@ -176,10 +157,6 @@ locais.forEach(function (local) {
   ).addTo(mapa);
 
 
-
-  /* =====================================================
-     POPUP
-     ===================================================== */
 
   const popup =
 
@@ -217,10 +194,6 @@ locais.forEach(function (local) {
 
 
 
-/* =========================================================
-   COORDENADAS DA ROTA
-   ========================================================= */
-
 const coordenadas = locais
 
   .map(function (local) {
@@ -237,12 +210,10 @@ const coordenadas = locais
 
 
 
-/* =========================================================
+/* 
    URL DO OSRM
-   =========================================================
-
    O OSRM calcula o caminho seguindo as ruas.
-   ========================================================= */
+*/
 
 const urlRota =
 
@@ -254,9 +225,9 @@ const urlRota =
 
 
 
-/* =========================================================
+/*
    FORMATAR DISTÂNCIA
-   ========================================================= */
+*/
 
 function formatarDistancia(metros) {
 
@@ -287,9 +258,9 @@ function formatarDistancia(metros) {
 
 
 
-/* =========================================================
+/*
    FORMATAR TEMPO
-   ========================================================= */
+*/
 
 function formatarTempo(segundos) {
 
@@ -352,9 +323,9 @@ function formatarTempo(segundos) {
 
 
 
-/* =========================================================
+/*
    CALCULAR ROTA
-   ========================================================= */
+*/
 
 async function calcularRota() {
 
@@ -370,9 +341,9 @@ async function calcularRota() {
   try {
 
 
-    /* =====================================================
+    /*
        SOLICITAR ROTA AO OSRM
-       ===================================================== */
+    */
 
     const resposta =
 
@@ -398,9 +369,9 @@ async function calcularRota() {
 
 
 
-    /* =====================================================
+    /*
        VERIFICAR RESPOSTA
-       ===================================================== */
+    */
 
     if (
 
@@ -424,11 +395,9 @@ async function calcularRota() {
 
       dados.routes[0];
 
-
-
-    /* =====================================================
+    /*
        CONTORNO BRANCO DA ROTA
-       ===================================================== */
+    */
 
     const contorno =
 
@@ -461,10 +430,9 @@ async function calcularRota() {
     contorno.addTo(mapa);
 
 
-
-    /* =====================================================
+    /*
        LINHA DOURADA DA ROTA
-       ===================================================== */
+    */
 
     const linhaRota =
 
@@ -498,9 +466,9 @@ async function calcularRota() {
 
 
 
-    /* =====================================================
+    /*
        AJUSTAR ZOOM PARA A ROTA
-       ===================================================== */
+    */
 
     mapa.fitBounds(
 
@@ -516,9 +484,9 @@ async function calcularRota() {
 
 
 
-    /* =====================================================
+    /*
        MOSTRAR DISTÂNCIA
-       ===================================================== */
+    */
 
     const distancia =
 
@@ -540,9 +508,9 @@ async function calcularRota() {
 
 
 
-    /* =====================================================
+    /*
        MOSTRAR TEMPO
-       ===================================================== */
+    */
 
     const tempo =
 
@@ -563,10 +531,9 @@ async function calcularRota() {
     }
 
 
-
-    /* =====================================================
+    /*
        ESCONDER LOADING
-       ===================================================== */
+    */
 
     if (loading) {
 
@@ -590,10 +557,9 @@ async function calcularRota() {
 
 
 
-    /* =====================================================
-       MESMO SE A ROTA FALHAR,
-       MOSTRAR OS 8 MARCADORES
-       ===================================================== */
+    /*
+       MESMO SE A ROTA FALHAR, MOSTRA OS 8 MARCADORES
+    */
 
     if (marcadores.length > 0) {
 
@@ -622,9 +588,9 @@ async function calcularRota() {
 
 
 
-    /* =====================================================
+    /*
        MOSTRAR AVISO
-       ===================================================== */
+    */
 
     if (loading) {
 
@@ -645,9 +611,5 @@ async function calcularRota() {
 }
 
 
-
-/* =========================================================
-   INICIAR
-   ========================================================= */
 
 calcularRota();

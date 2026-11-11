@@ -22,24 +22,11 @@ a {
   color: inherit;
 }
 
-/* =========================================================
-CONTAINER
-========================================================= */
-
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
 }
-
-
-/* =========================================================
-HEADER
-========================================================= */
-
-/* =========================================================
-HERO
-========================================================= */
 
 .hero {
   padding: 90px 0;
@@ -63,11 +50,6 @@ HERO
   margin: 20px 0;
 }
 
-
-/* =========================================================
-BOTÕES
-========================================================= */
-
 .btn {
   display: inline-block;
   padding: 12px 22px;
@@ -85,11 +67,6 @@ BOTÕES
   border: 1px solid #d4af37;
   color: #a27b19;
 }
-
-
-/* =========================================================
-SEÇÕES
-========================================================= */
 
 .section {
   padding: 70px 0;
@@ -113,11 +90,6 @@ SEÇÕES
   max-width: 650px;
   margin: 10px auto;
 }
-
-
-/* =========================================================
-CARDS
-========================================================= */
 
 .cards {
   display: grid;
@@ -151,11 +123,6 @@ CARDS
   font-size: 12px;
   margin-top: 10px;
 }
-
-
-/* =========================================================
-ROTAS
-========================================================= */
 
 .rota-introducao {
   display: flex;
@@ -202,21 +169,11 @@ ROTAS
   color: #666;
 }
 
-
-/* =========================================================
-LISTA DOS LOCAIS
-========================================================= */
-
 .locais-rota {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-
-
-/* =========================================================
-CARD DE ROTA
-========================================================= */
 
 .route.card {
   display: grid;
@@ -242,14 +199,8 @@ CARD DE ROTA
 
   border-color: #d4af37;
 
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
-
-
-/* =========================================================
-NÚMERO
-========================================================= */
 
 .number {
   width: 55px;
@@ -271,11 +222,6 @@ NÚMERO
 
   font-weight: bold;
 }
-
-
-/* =========================================================
-INFORMAÇÕES DO LOCAL
-========================================================= */
 
 .route-info {
   min-width: 0;
@@ -303,11 +249,6 @@ INFORMAÇÕES DO LOCAL
   color: #666;
 }
 
-
-/* =========================================================
-STATUS
-========================================================= */
-
 .route-status {
   display: flex;
   justify-content: flex-end;
@@ -331,11 +272,6 @@ STATUS
   white-space: nowrap;
 }
 
-
-/* =========================================================
-MAPA
-========================================================= */
-
 .map-section {
   margin-top: 35px;
 
@@ -347,14 +283,8 @@ MAPA
 
   overflow: hidden;
 
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
-
-
-/* =========================================================
-CABEÇALHO DO MAPA
-========================================================= */
 
 .map-header {
   display: flex;
@@ -367,12 +297,7 @@ CABEÇALHO DO MAPA
 
   padding: 25px 28px;
 
-  background:
-    linear-gradient(
-      120deg,
-      #fff,
-      #faf5e8
-    );
+  background: linear-gradient(120deg, #fff, #faf5e8);
 
   border-bottom: 1px solid #e8dfc9;
 }
@@ -404,11 +329,6 @@ CABEÇALHO DO MAPA
 
   font-size: 14px;
 }
-
-
-/* =========================================================
-RESUMO DA ROTA
-========================================================= */
 
 .route-summary {
   display: flex;
@@ -442,11 +362,6 @@ RESUMO DA ROTA
   letter-spacing: 0.5px;
 }
 
-
-/* =========================================================
-CONTAINER DO MAPA
-========================================================= */
-
 .map-wrapper {
   position: relative;
 
@@ -466,19 +381,11 @@ CONTAINER DO MAPA
   z-index: 1;
 }
 
-
-/* =========================================================
-LEAFLET
-========================================================= */
-
 .leaflet-container {
   width: 100%;
   height: 100%;
 
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
   background: #e9e4d8;
 }
@@ -490,11 +397,6 @@ LEAFLET
 .leaflet-control-attribution {
   font-size: 10px;
 }
-
-
-/* =========================================================
-LOADING
-========================================================= */
 
 .map-loading {
   position: absolute;
@@ -511,13 +413,11 @@ LOADING
 
   justify-content: center;
 
-  background:
-    rgba(255, 253, 248, 0.92);
+  background: rgba(255, 253, 248, 0.92);
 
   backdrop-filter: blur(3px);
 
-  transition:
-    opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .map-loading.hidden {
@@ -543,8 +443,7 @@ LOADING
 
   font-size: 28px;
 
-  animation:
-    mapa-pulsar 1.4s infinite;
+  animation: mapa-pulsar 1.4s infinite;
 }
 
 .map-loading p {
@@ -553,39 +452,25 @@ LOADING
   font-weight: bold;
 }
 
-
 @keyframes mapa-pulsar {
-
   0% {
     transform: scale(1);
 
-    box-shadow:
-      0 0 0 0
-      rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
   }
 
   70% {
     transform: scale(1.04);
 
-    box-shadow:
-      0 0 0 15px
-      rgba(212, 175, 55, 0);
+    box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
   }
 
   100% {
     transform: scale(1);
 
-    box-shadow:
-      0 0 0 0
-      rgba(212, 175, 55, 0);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
   }
-
 }
-
-
-/* =========================================================
-MARCADORES DO MAPA
-========================================================= */
 
 .icone-rota {
   background: transparent !important;
@@ -603,16 +488,13 @@ MARCADORES DO MAPA
 
   justify-content: center;
 
-  border-radius:
-    50% 50% 50% 0;
+  border-radius: 50% 50% 50% 0;
 
   background: #d4af37;
 
   border: 3px solid white;
 
-  box-shadow:
-    0 3px 10px
-    rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 
   color: white;
 
@@ -629,11 +511,6 @@ MARCADORES DO MAPA
   transform: rotate(45deg);
 }
 
-
-/* =========================================================
-POPUP
-========================================================= */
-
 .leaflet-popup-content-wrapper {
   border-radius: 10px;
 }
@@ -641,10 +518,7 @@ POPUP
 .leaflet-popup-content {
   margin: 14px 16px;
 
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .popup-numero {
@@ -689,11 +563,6 @@ POPUP
   color: #7f5f0f !important;
 }
 
-
-/* =========================================================
-LINHA DA ROTA
-========================================================= */
-
 .rota-contorno {
   stroke: white;
 
@@ -717,11 +586,6 @@ LINHA DA ROTA
 
   opacity: 0.95;
 }
-
-
-/* =========================================================
-LEGENDA
-========================================================= */
 
 .map-legend {
   display: flex;
@@ -782,11 +646,6 @@ LEGENDA
   font-weight: bold;
 }
 
-
-/* =========================================================
-ABOUT
-========================================================= */
-
 .about {
   display: grid;
 
@@ -802,11 +661,6 @@ ABOUT
 
   color: #222;
 }
-
-
-/* =========================================================
-TABELAS
-========================================================= */
 
 table {
   width: 100%;
@@ -830,11 +684,6 @@ th {
 
   color: #6f5410;
 }
-
-
-/* =========================================================
-FORMULÁRIO
-========================================================= */
 
 .form {
   max-width: 700px;
@@ -878,11 +727,6 @@ FORMULÁRIO
   height: 130px;
 }
 
-
-/* =========================================================
-FOOTER
-========================================================= */
-
 footer {
   background: #171717;
 
@@ -905,13 +749,7 @@ footer {
   color: #d4af37;
 }
 
-
-/* =========================================================
-RESPONSIVIDADE
-========================================================= */
-
 @media (max-width: 800px) {
-
   nav a {
     margin-left: 8px;
 
@@ -930,9 +768,6 @@ RESPONSIVIDADE
     grid-template-columns: 1fr;
   }
 
-
-  /* ROTAS */
-
   .route.card {
     grid-template-columns: 55px 1fr;
   }
@@ -942,9 +777,6 @@ RESPONSIVIDADE
 
     justify-content: flex-start;
   }
-
-
-  /* MAPA */
 
   .map-header {
     flex-direction: column;
@@ -965,12 +797,10 @@ RESPONSIVIDADE
   .map-wrapper {
     height: 450px;
   }
-
 }
 
-
 @media (max-width: 560px) {
-.cards {
+  .cards {
     grid-template-columns: 1fr;
   }
 
@@ -990,17 +820,11 @@ RESPONSIVIDADE
     font-size: 29px;
   }
 
-
-  /* INTRODUÇÃO */
-
   .rota-introducao {
     align-items: flex-start;
 
     padding: 17px;
   }
-
-
-  /* CARDS */
 
   .route.card {
     padding: 18px;
@@ -1027,9 +851,6 @@ RESPONSIVIDADE
     grid-column: 2;
   }
 
-
-  /* MAPA */
-
   .map-header {
     padding: 20px;
   }
@@ -1046,9 +867,6 @@ RESPONSIVIDADE
     height: 400px;
   }
 
-
-  /* LEGENDA */
-
   .map-legend {
     flex-direction: column;
 
@@ -1057,19 +875,25 @@ RESPONSIVIDADE
     gap: 10px;
   }
 
-
-  /* FOOTER */
-
   .footer {
     flex-direction: column;
   }
-
 }
 
-/* 06 — refinamentos de acessibilidade e responsividade desta página */
-.page-rotas .route-title:focus-visible { outline: 3px solid #a8781d; outline-offset: 3px; }
-.page-rotas .map-wrapper { width: 100%; max-width: 100%; overflow: hidden; }
+.page-rotas .route-title:focus-visible {
+  outline: 3px solid #a8781d;
+  outline-offset: 3px;
+}
+.page-rotas .map-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
 @media (max-width: 720px) {
-  .page-rotas .container { width: min(100% - 32px, 1100px); }
-  .page-rotas .section { padding: 54px 0; }
+  .page-rotas .container {
+    width: min(100% - 32px, 1100px);
+  }
+  .page-rotas .section {
+    padding: 54px 0;
+  }
 }
